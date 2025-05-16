@@ -16,7 +16,6 @@ export async function checkSolTransfer(
     });
 
 
-
     for (const sig of signatures) {
 
         const versionedTransaction = await connection.getTransaction(sig.signature, {
